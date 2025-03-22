@@ -5,17 +5,32 @@
 }
 
 body {
-	background-color: #303030;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	row-gap: 1rem;
+}
+
+.container {
+	/* background-color: #303030; */
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	overflow-y: hidden;
-	height: 50vh;
+	width: 100vw;
 }
 
 video {
-	width: 90vw;
-	height: 200px;
+	flex: 1 1 0;
+	max-width: 50rem;
+	height: auto;
+	aspect-ratio: 16/9;
 	background-color: #474950;
 	border: 2px solid black;
+}
+
+#next-btn {
+	width: 8rem;
+	height: auto;
+	aspect-ratio: 16/5;
 }

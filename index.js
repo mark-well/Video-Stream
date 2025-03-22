@@ -1,7 +1,7 @@
 let express = require("express");
 let fs = require("fs");
 let app = express();
-let PORT = 8080;
+let PORT = 80;
 
 app.use(express.static("public"));
 
